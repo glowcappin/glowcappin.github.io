@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickRP - Join the Experience</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet"> <!-- Oswald Font -->
+</head>
+    <div class="loader">
+        <div></div>
+    </div>
+	
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="ClickRP Logo"> <!-- Cursor logo -->
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/screenshot1.png" alt="ClickRP Cinematic" class="background-image">
+            <div class="hero-content">
+                <h1>ClickRP</h1>
+                <p>Welcome to ClickRP, where immersive roleplay meets unparalleled creativity—experience a vibrant community, dynamic storytelling, and endless opportunities.</p>
+                <a href="https://forms.fillout.com/t/gztWLCyLcHus" class="apply-btn">Apply Now</a>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="images/screenshot2.png" alt="Screenshot 1">
+                <img src="images/screenshot4.png" alt="Screenshot 2">
+                <img src="images/screenshot5.png" alt="Screenshot 3">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ClickRP. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<script>
+    window.addEventListener('scroll', function () {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 0) { // Change to 0 to trigger on scroll
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+	
+	        // Hide loader once the page has finished loading
+        window.addEventListener('load', function() {
+            const loader = document.querySelector('.loader');
+            const hero = document.querySelector('.hero');
+            loader.style.display = 'none'; // Hide loader
+            hero.style.opacity = '1'; // Fade in the hero section
+        });
+</script>
